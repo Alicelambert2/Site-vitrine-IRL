@@ -1,0 +1,282 @@
+:root {
+    font-size: 62.5%;
+    --jaune-primaire: hexa(#ffff66);
+    --violet-primaire: hexa(#6633cc);
+    --rouge-primaire: hexa(#ff3333);
+    --font-size-copy: 1.8rem;
+    --font-family-macula: macula-line,sans-serif; 
+    --font-family-dico: dico-sans-soft, sans-serif;
+}
+.premier{
+    margin-top: 25vh;
+}
+.h2mobile{
+    display: none;
+}
+
+.adresse {
+    display: grid;
+    grid-template-areas: 
+    "carte adresse"
+    "carte contacts";
+    text-align: center;
+    background-position: center;
+    padding: 5rem;
+}
+.Horaires { 
+    display: grid;
+    grid-template-areas: 
+    "horaires local";
+    text-align: center;
+    padding: 5rem;
+}
+.tarifs {
+    display: grid;
+    grid-template-areas: 
+    "tarifs guide";
+    text-align: center;
+    background-position: center;
+    padding: 5rem;
+    align-content: stretch;
+}
+#carte {
+    grid-area: carte;
+}
+#adresse {
+    grid-area: adresse;
+}
+#horaires {
+    grid-area: horaires;
+}
+#local {
+    grid-area: local;
+    background: no-repeat url(/Images/idee\ local\ 2.png) center / cover ;
+}
+#tarifs {
+    grid-area: tarifs;
+}
+#tarifs .bouton-principal {
+    margin-top: 6vh;
+}
+#guide {
+    grid-area: guide;
+}
+#tarifs h2, #guide h2, #carte h2, #adresse h2, #horaires h2, #local h2, #contacts h2 {
+    background-color: #ffff66;
+    max-height: 7rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+#tarifs p, #guide p, #carte p, #adresse p, #horaires p, #local p {
+    margin: 2rem 0;
+}
+.soustexte {
+    font-size: small;
+    line-height: 2rem;
+    color: rgb(153, 153, 153);
+}
+
+/*modales*/
+#boutonmodal, #boutonmodal2{
+    display: block;
+    background-color: #fefefe;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: var(--font-family-dico);
+    font-size: 1.5rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#reduit, #gratuit {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content, .modal2-content {
+    background-color: #fefefe;
+    margin: 10rem 15%;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 60%; 
+    height: auto;
+}
+.modal-content h2, h3, .modal2-content h2, h3 {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffff66;
+}
+.modal-content .texte, .modal2-content .texte {
+    margin: 5rem;
+    line-height: normal;
+}
+.modal-content .soustexte, .modal2-content .soustexte {
+    line-height: normal;
+}
+.boutonfermer, .fermer2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: var(--font-family-dico);
+}
+.boutonfermer:hover, .boutonfermer:focus, .fermer2:hover, .fermer2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--font-family-dico);
+}
+
+
+@media screen and (max-width: 480px){
+.premier{
+    display: none;
+}
+.h2mobile{
+    display: block;
+    text-align: center;
+    margin: 8% 0;
+}
+.adresse, .Horaires, .tarifs {
+    display: block;
+    padding: 0 0;
+}
+iframe {
+    width: 90%;
+    padding: 0.5rem;
+}
+#local {
+    height: 20vh;
+}
+
+#tarifs h2, #guide h2, #carte h2, #adresse h2, #horaires h2, #local h2, #contacts h2 {
+    max-height: 7rem;
+    padding: 2rem 0;
+    margin: 2rem 4%;
+}
+#tarifs p, #guide p, #carte p, #adresse p, #horaires p, #local p {
+    padding: 0;
+    line-height: 2rem;
+}
+.soustexte {
+    line-height: 2.5rem;
+    padding: 0;
+}
+#tarifs, #guide, #carte, #adresse, #horaires, #local, #contacts {
+    border: solid #999999;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+#guide {
+    margin-bottom: 15vh;
+}
+#tarifs .bouton-principal {
+    margin-top: 5vh;
+}
+
+
+/*modales*/
+#boutonmodal {
+    margin-bottom: 2rem;
+}
+
+#reduit, #gratuit {
+    overflow-y: scroll;
+}
+.modal-content, .modal2-content {
+    margin: 2rem;
+    width: 80%; 
+    height: 70%;
+    overflow-y: scroll;
+}
+.modal-content h2, .modal-content h3, .modal2-content h2, .modal2-content h3 {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #ffff66;
+}
+.modal-content .texte, .modal2-content .texte {
+    margin: 2rem;
+}
+.modal-content .soustexte, .modal2-content .soustexte {
+    margin: 1rem 0;
+}
+.boutonfermer, .fermer2 {
+    font-size: 2rem;
+}
+}
+
+
+/*tablette*/
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px){
+
+.adresse, .Horaires, .tarifs {
+    display: block;
+    padding: 0 0;
+}
+iframe {
+    width: 90%;
+    padding: 0.5rem;
+}
+#local {
+    height: 20vh;
+}
+#tarifs h2, #guide h2, #carte h2, #adresse h2, #horaires h2, #local h2, #contacts h2 {
+    max-height: 7rem;
+    padding: 2rem 0;
+    margin: 2rem 4%;
+}
+#tarifs p, #guide p, #carte p, #adresse p, #horaires p, #local p {
+    padding: 0;
+    line-height: 2rem;
+}
+.soustexte {
+    line-height: 2.5rem;
+    padding: 0;
+}
+#tarifs, #guide, #carte, #adresse, #horaires, #local, #contacts {
+    border: solid #999999;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+#guide {
+    margin-bottom: 0vh;
+}
+#tarifs .bouton-principal {
+    margin-top: 5vh;
+}
+   
+/*modales*/
+#boutonmodal {
+    margin-bottom: 2rem;
+}
+#reduit, #gratuit {
+     overflow-y: scroll;
+}
+.modal-content, .modal2-content {
+    margin: 2rem;
+    width: 80%; 
+    height: 70%;
+    overflow-y: scroll;
+}
+.modal-content h2, .modal-content h3, .modal2-content h2, .modal2-content h3 {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #ffff66;
+}
+.modal-content .texte, .modal2-content .texte {
+    margin: 2rem;
+}
+.modal-content .soustexte, .modal2-content .soustexte {
+    margin: 1rem 0;
+}
+.boutonfermer, .fermer2 {
+    font-size: 2rem;
+}
+}

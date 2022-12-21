@@ -1,0 +1,282 @@
+:root {
+    font-size: 62.5%;
+    --jaune-primaire: hexa(#ffff66);
+    --violet-primaire: hexa(#6633cc);
+    --rouge-primaire: hexa(#ff3333);
+    --font-size-copy: 1.8rem;
+    --font-family-macula: macula-line,sans-serif; 
+    --font-family-dico: dico-sans-soft, sans-serif;
+}
+
+/*styles de typo*/
+h1 {
+    font-family: dico-sans-soft,sans-serif;
+    font-size: 5.0rem;
+    font-weight: 900;
+}
+h2 {
+    font-family: dico-sans-soft,sans-serif;
+    font-size: 4.0rem;
+    font-weight: 900;
+}
+h3 {
+    font-family: dico-sans-soft,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.0rem;
+}
+h4 {
+    font-family: dico-sans-soft,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+p {
+    font-family: dico-sans-soft,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 28px;
+    padding: 1rem 0 0 1rem;
+}
+.bouton-principal {
+    background-color: rgb(22, 22, 22);
+    font-family: dico-sans-soft,sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+.bouton-principal:hover{
+    background-color: white ;
+    color: black;
+}
+.bouton-secondaire {
+    background-color: rgb(224, 220, 220);
+    font-family: dico-sans-soft,sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(22, 22, 22);
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+}
+.bouton-secondaire:hover{
+    background-color: white ;
+}
+
+/*tout doc*/
+* {
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+    margin: 0;
+}
+
+/*navbar commune*/
+#logo {
+    width: 120px;
+    height: auto;
+    background-color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    width: 100vw;
+    box-shadow: 1px 1px 1px 1px grey;
+    overflow: hidden;
+}
+#navbar li{
+    padding: 20px;
+    text-align: center;
+}
+#navbar li:hover{
+    background-color: #ffff66;
+}
+#navbar li.active{
+    background-color: rgba(102, 51, 204, 0.5);
+}
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5vw;
+    margin: 0 50px 0 0;
+}
+#tabbar{
+    display: none;
+}
+a {
+    font-family: dico-sans-soft,sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+/*footer*/
+footer {
+    display: grid;
+    grid-template: (2, 1fr) / 0.5fr 0.5fr 3fr ;
+    grid-template-areas: 
+    "logo footer1 footer2 footer2 footer2 footer2"
+    "logo footer1 footer3 footer3 footer3 footer3";
+    background-color: white;
+    margin: 10rem 50px 10px 0;
+    border: solid;
+}
+.logo {
+    grid-area: logo;
+    margin: 0 0 0 50px;
+}
+.footer1 {
+    grid-area: footer1;
+}
+footer p {
+    padding: 25px 0 0 0;
+} 
+.footer2 {
+    grid-area: footer2;
+    padding: 10px;
+    text-align: center;
+} 
+.footer3 {
+    grid-area: footer3;
+    text-align: center;
+} 
+.footer2 a{
+    padding: 8px;
+}
+.footer2 a:hover{
+    background-color: #ffff66;
+}
+.footer2 a.active{
+    background-color: rgba(102, 51, 204, 0.5);
+}
+main {
+    margin: 0 10rem 0 10rem;
+}
+
+/*pour téléphone*/
+
+@media screen and (max-width: 480px){
+/*styles de typo*/
+h1 {
+    font-size: 2.8rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2.2rem;
+}
+h4 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.5rem;
+}
+.bouton-principal {
+    font-size: 1.6rem;
+}
+#tabbar {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 95%; 
+    height: 10vh;   
+    top: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    padding: 10px;
+    box-shadow: 3px -3px #9999;
+    /* margin-top: 30vh; */
+    position: fixed;
+}
+a {
+    font-size: 1.5rem;
+    display: block;
+}
+#tabbar li{
+    display: block;
+    padding: 30px;
+}
+#tabbar li:hover{
+    background-color: #ffff66;
+}
+#tabbar li.active{
+    background-color: rgba(102, 51, 204, 0.5);
+}
+/*footer*/
+footer {
+    display: none
+}
+.navbar, #navbar {
+    display: none;
+}
+main {
+    margin: 0 3rem 0 3rem;
+}
+}
+
+
+
+/*TABLETTE */
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px){
+
+main{
+    margin: 0 6vw 0 6vw;
+}
+.navbar{
+    top: 10vw;
+}
+#navbar{
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+h1 {
+    font-size: 4.0rem;
+}
+h2 {
+    font-size: 3.0rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h4 {
+    font-size: 2rem;
+}
+
+footer {
+    display: grid;
+    grid-template: (2, 1fr) / 0.5fr 0.5fr 3fr ;
+    grid-template-areas: 
+    "logo footer1 footer2 footer2 footer2 footer2"
+    "logo footer1 footer3 footer3 footer3 footer3";
+    background-color: white;
+    margin: 5rem 0 1rem 0;
+}
+.logo {
+    grid-area: logo;
+    margin: 0 0 0 0;
+    align-items: center;
+}
+footer p {
+    padding: 1rem 0 0 1rem;
+    text-align: center;
+} 
+}

@@ -1,0 +1,94 @@
+:root {
+    font-size: 62.5%;
+    --jaune-primaire: hexa(#ffff66);
+    --violet-primaire: hexa(#6633cc);
+    --rouge-primaire: hexa(#ff3333);
+    --font-size-copy: 1.8rem;
+    --font-family-macula: macula-line,sans-serif; 
+    --font-family-dico: dico-sans-soft, sans-serif;
+}
+#liste li {
+    font-family: dico-sans-soft,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 28px;
+    padding: 1rem 0 0 1rem;
+    margin-left: 20%;
+    max-width: 60%;
+}
+.premier{
+    margin-top: 25vh;
+}
+
+h2 {
+    margin-top: 5rem;
+    text-align: center;
+    background-color: #ffff66;
+    padding: 3rem 0;
+    height: 7vh;
+    margin-bottom: 2rem;
+}
+
+h3{
+    padding: 3rem 0;
+    height: 7vh;
+    margin-left: 15%;
+}
+
+p{
+    max-width: 60%;
+    margin-left: 20%;
+}
+
+@media screen and (max-width: 480px){
+
+.premier{
+   display: none;
+}
+h2 {
+    margin-top: 5rem;
+    padding: 3rem 0 1rem 0;
+    margin-bottom: 2rem;
+}
+h3{
+    padding: 0;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+p{
+    max-width: 80%;
+    margin-left: 8%;
+}
+#liste li {
+    font-size: 1.5rem;
+    margin-left: 10%;
+}
+.dernier{
+    margin-bottom: 30%;
+}
+}    
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px){
+
+h2 {
+    margin-top: 5rem;
+    padding: 3rem 0 1rem 0;
+    margin-bottom: 2rem;
+}
+h3{
+    padding: 0;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+p{
+    max-width: 80%;
+    margin-left: 8%;
+}
+    #liste li {
+    font-size: 1.5rem;
+    margin-left: 10%;
+}
+.dernier{
+    margin-bottom: 30%;
+}
+}   

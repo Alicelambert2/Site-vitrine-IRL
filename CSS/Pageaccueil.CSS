@@ -1,0 +1,195 @@
+:root {
+    font-size: 62.5%;
+    --jaune-primaire: hexa(#ffff66);
+    --violet-primaire: hexa(#6633cc);
+    --rouge-primaire: hexa(#ff3333);
+    --font-size-copy: 1.8rem;
+    --font-family-macula: macula-line,sans-serif; 
+    --font-family-dico: dico-sans-soft, sans-serif;
+}
+
+/* Page d'accueil */
+/*herosection*/
+#herosection {
+    text-align: center;
+    background: no-repeat url(/Images/Expositions/pexels-cocakolalips-3841778.jpg) top / cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+#titresheader {
+    backdrop-filter: blur(1.5rem);
+    background-color: rgba(255, 255, 255, .35);
+    border-radius: 30px;
+    max-width: 60%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20%;
+}
+
+/*1er encadré*/
+.demain {
+    margin: 0 10% ;
+    border-style: solid;
+    padding: 2% 10%;
+}
+.demain h3 {
+    background-color: #ffff66;
+    padding: 10px;
+    text-align: start;
+    max-width: 100%;
+}
+.demain p {
+    height: auto;
+    width: auto;
+}
+
+/*2ème encadré*/
+#en-cours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    height: 70vh;
+    gap: 2%;
+    margin: 5% 0;
+}
+#en-cours h3 {
+    background-color: #6633cc;
+    padding: 10px 0;
+    text-align: center;
+    max-width: 100%;
+}
+#en-cours p {
+    background-color: rgba(255, 255, 255, 0.40);
+    padding: 24px;
+}
+#expo-en-cours {
+    background: no-repeat url(/Images/Expositions/pexels-mo-eid-9002742.jpg)bottom / cover;
+    max-width: 100%;
+    height: 60vh;
+    border-radius: 20px;
+}
+#expo-en-cours .boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 45vh;
+    max-width: 100%;
+    padding: 10px;
+}
+#soir-electro h3 {
+    background-color: #6633cc;
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+}
+#soir-electro p {
+    background-color: rgba(255, 255, 255, 0.40);
+    padding: 24px;
+}
+#soir-electro {
+    background: no-repeat url(/Images/Expositions/joshua-fuller-ta7rN3NcWyM-unsplash.jpg) center / cover;
+    max-width: 100%;
+    height: 60vh;
+    border-radius: 20px;
+}
+#soir-electro .boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 45vh;
+    padding: 10px;
+}
+#mobileuniquement{
+    display: none;
+}
+
+/* media query pour téléphone*/
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+/*herosection*/
+#herosection {
+    height: 60vh;
+}
+
+#titresheader {
+    padding: 1rem;
+    min-width: 80%;
+}
+/*1er encadré*/
+.demain {
+    margin: 0 0 2rem 0;
+}
+/*2ème encadré*/
+.expos2 {
+    margin-bottom: 15vh;
+}
+.expos{
+    margin-bottom: 2vh;
+}
+#en-cours {
+    display: inline;
+}
+#expo-en-cours, #soir-electro {
+    height: 50vh;
+    margin: 0 0 0 0;
+}
+#expo-en-cours .boutons {
+    height: 65%;
+}
+#soir-electro h3 {
+    margin: 2rem 0 0 0;
+}
+#soir-electro .boutons {
+    height: 75%;
+}
+#mobileuniquement{
+    display: inline;
+    margin-bottom: 10rem;
+}
+}
+
+/*media query pour tablette*/
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+/*herosection*/
+#herosection {
+    height: 70vh;
+}
+#titresheader {
+    margin-top: 40%;
+    padding: 1rem;
+    min-width: 80%;
+}
+/*1er encadré*/
+.demain {
+    margin: 0 0 2rem 0;
+}
+/*2ème encadré*/
+.expos2 {
+    margin-bottom: 5vh;
+}
+.expos{
+    margin-bottom: 2vh;
+}
+#en-cours {
+    display: inline;
+}
+#expo-en-cours, #soir-electro {
+    height: 50vh;
+    margin: 0 0 0 0;
+}
+#expo-en-cours .boutons {
+    height: 65%;
+}
+#soir-electro h3 {
+    margin: 2rem 0 0 0;
+}
+#soir-electro .boutons {
+    height: 75%;
+}
+#mobileuniquement{
+    display: none;
+}
+}

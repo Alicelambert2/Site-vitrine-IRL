@@ -1,0 +1,215 @@
+:root {
+    font-size: 62.5%;
+    --jaune-primaire: hexa(#ffff66);
+    --violet-primaire: hexa(#6633cc);
+    --rouge-primaire: hexa(#ff3333);
+    --font-size-copy: 1.8rem;
+    --font-family-macula: macula-line,sans-serif; 
+    --font-family-dico: dico-sans-soft, sans-serif;
+}
+.premier{
+    margin-top: 25vh;
+}
+
+.h2mobile{
+    display: none;
+}
+
+.deco {
+    background-color: rgba(255, 255, 102, 30%);
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    z-index: -1;
+}
+#une:after {
+    content: "";
+    height: 30vh;
+    width: 50vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: -40% 0% 0% 100% ;
+}
+#une:before {
+    content: "";
+    height: 45vh;
+    width: 40vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: 5% 0% 0% 150% ;
+}
+#deux {
+    margin: 0% 0% 0% 60% ;
+}
+#deux:before {
+    content: "";
+    height: 45vh;
+    width: 40vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: 20% 0% 0% -250% ;
+    z-index: 0;
+}
+#trois {
+    margin: 0% 0% 0% 25% ;
+}
+
+.titre{
+    background-color: #ffff66;
+    max-height: 7rem;
+    padding: 2rem 2rem;
+}
+#quisommesnous {
+    margin: 0% 40% 10% 0% ;
+}
+#nosvaleurs {
+    margin: 10% 10% 10% 30% ;
+}
+#notrevision {
+    margin: 0 0 10% 50%;
+}
+
+@media screen and (max-width: 420px){
+.premier{
+    display: none;
+}
+.h2mobile{
+    display: block;
+    text-align: center;
+    margin: 8% 0;
+}
+.titre{
+    margin: 1rem 1rem;
+    padding: 2% 10%;
+}
+.paragraphes {
+    width: 100%;
+    border-style: solid;
+    margin: 2rem 0 0 0;
+}
+#nosvaleurs, #trois, #notrevision{
+    margin: 2rem 0 0 0;
+}
+#notrevision {
+    margin-bottom: 32%;
+}
+
+.deco {
+    height: 10%;
+    width: 70%;
+}
+#une {
+    margin: 10% 0% 0% -10% ;
+}
+#une:after {
+    content: "";
+    height: 10vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: -50% 0% 0% 50% ;
+}
+#une:before {
+    content: "";
+    height: 10vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: 50% 0% 0% 40% ;
+    z-index: 0;
+}
+#deux {
+    margin: 0% 0% 0% 60% ;
+}
+#deux:before {
+    content: "";
+    height: 10vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: 40% 0% 0% -100% ;
+    z-index: 0;
+}
+#trois {
+    margin: 25% 0% 0% 25% ;
+}
+#trois:before {
+    content: "";
+    height: 10vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: 70% 0% 0% -40% ;
+    z-index: 0;
+}
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px){
+.h2mobile{
+    display: none;
+}
+.titre{
+    margin: 1rem 1rem;
+    padding: 2% 10%;
+}
+.paragraphes {
+    width: 100%;
+    border-style: solid;
+    margin: 2rem 0 0 0;
+}
+#nosvaleurs, #trois, #notrevision{
+    margin: 2rem 0 0 0;
+}
+#notrevision {
+    margin-bottom: 0;
+}
+
+.deco {
+    height: 10%;
+    width: 70%;
+}
+#une {
+    margin: 10% 0% 0% -10% ;
+}
+#une:after {
+    content: "";
+    height: 10vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: -50% 0% 0% 50% ;
+}
+#une:before {
+    content: "";
+    height: 10vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: 50% 0% 0% 40% ;
+    z-index: 0;
+}
+#deux {
+    margin: 0% 0% 0% 60% ;
+}
+#deux:before {
+    content: "";
+    height: 10vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: 40% 0% 0% -100% ;
+    z-index: 0;
+}
+#trois {
+    margin: 25% 0% 0% 25% ;
+}
+#trois:before {
+    content: "";
+    height: 10vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 102, 30%);
+    position: absolute;
+    margin: 70% 0% 0% -40% ;
+    z-index: 0;
+}
+}

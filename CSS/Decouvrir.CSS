@@ -1,0 +1,658 @@
+:root {
+    font-size: 62.5%;
+    --jaune-primaire: hexa(#ffff66);
+    --violet-primaire: hexa(#6633cc);
+    --rouge-primaire: hexa(#ff3333);
+    --font-size-copy: 1.8rem;
+    --font-family-macula: macula-line,sans-serif; 
+    --font-family-dico: dico-sans-soft, sans-serif;
+}
+
+
+/*header*/
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.premier{
+    margin-top: 25vh;
+}
+.mobile {
+    display: none;
+}
+
+/*expo temp*/
+#en-cours h3, #soir-electro h3 {
+    background-color: #6633cc;
+    background-position: center;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    margin-top: 3rem;
+    height: 8vh;
+}
+#en-cours p, #soir-electro p {
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 24px;
+}
+
+#expo-en-cours {
+    background: no-repeat url(/Images/Expositions/pexels-mo-eid-9002742.jpg) bottom / cover;
+    height: 100%;
+}
+#expo-en-cours .boutons, #soir-electro .boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 80%;
+    padding: 10px;
+}
+
+.haut {
+    margin-left: 60%;
+    margin-bottom: 10%
+}
+.haut2 {
+    /* margin-top: 5%; */
+    margin-left: 60%;
+    margin-bottom: 30%
+}
+/*soir electro*/
+
+.decouvrir #soir-electro {
+    background: no-repeat url(/Images/Expositions/joshua-fuller-ta7rN3NcWyM-unsplash.jpg) center / cover;
+    height: 100%;
+}
+
+.container-expos, .container-electro {
+    height: 100vh;
+    margin: 0 0 10rem 0;
+}
+
+/*expos permanentes*/
+#expospermanentes h3 {
+    background-color: #6633cc;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    margin-top: 3rem;
+    height: 8vh;
+}
+.container-permanentes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    height: 90vh;
+    margin-bottom: 5%;
+}
+/*1*/
+#permanentes1 {
+    background: no-repeat url(/Images/Expositions/pexels-roman-ska-7096339.jpg) top / cover;
+    height: 100%;
+}
+#permanentes1 p, #permanentes2 p, #permanentes3 p {
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 20px;
+    height: 15vh;
+}
+#permanentes1 .boutons, #permanentes2 .boutons, #permanentes3 .boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 65%;
+    padding: 10px;
+}
+
+#permanentes2 {
+    background: no-repeat url(/Images/Expositions/08f5f2a7d14c4923785ae1.webp) top / cover;
+    height: 100%;
+}
+
+#permanentes3 {
+    background: no-repeat url(/Images/Expositions/ce49090f1ad254a6af5234.webp) bottom / cover;
+    height: 100%;
+}
+
+
+/*histoire*/
+#histoire {
+    margin-top: 5rem;
+    margin-bottom: 5%;
+    background: #ff3333;
+}
+
+#histoire h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.histoire {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    height: auto;
+    margin: 5rem;
+}
+
+#artiste {
+    background: no-repeat url(/Images/Artistes/markrisephoto.jpg) center / cover;
+    height: 90vh;
+}
+#oeuvre {
+    background: no-repeat url(/Images/Oeuvres/mark\ rise\ flat\ design.jpg) bottom / cover;
+}
+
+.fond {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+}
+
+#ensavoirplus {
+    margin-bottom: 2rem;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.histoire-mobile {
+    display: none;
+}
+
+/* expos temporaires */
+#expostemporaires-mobile{
+    display: none;
+}
+
+#expostemporaires {
+    background-color: rgba(144, 105, 251, 0.20);
+    padding: 2rem 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5%;
+}
+#expostemporaires h3 {
+    background-color: #6633cc;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    margin-top: 3rem;
+    height: 8vh;
+}
+#expostemporaires h4{
+    background-color: #6633cc;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    margin-top: 3rem;
+    height: 8vh;
+    margin-bottom: 2rem;
+}
+.container-temporaires1, .container-temporaires2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    height: 80vh;
+}
+.container-temporaires3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    height: 80vh;
+}
+
+#temporaire1 p, #temporaire2 p, #temporaire3 p, #temporaire4 p, #temporaire5 p, #temporaire6 p, #temporaire7 p, #temporaire8 p, #temporaire9 p, #temporaire10 p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 24px;
+    height: 12vh;
+}
+#temporaire1 .boutons, #temporaire2 .boutons, #temporaire3 .boutons, #temporaire4 .boutons, #temporaire5 .boutons, #temporaire6 .boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 70%;
+    padding: 10px;
+}
+#temporaire7 .boutons, #temporaire8 .boutons, #temporaire9 .boutons, #temporaire10 .boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 70%;
+    padding: 10px;
+}
+
+#temporaire1 {
+    background: no-repeat url(/Images/Expositions/dennis-mita-BVqoF4TzJ1Y-unsplash.jpg) top / cover;
+}
+#temporaire2 {
+    background: no-repeat url(/Images/Expositions/pexels-cocakolalips-3841778.jpg) top / cover;
+}
+#temporaire3 {
+    background: no-repeat url(/Images/Expositions/digital\ talks.jpg) top / cover;
+}
+#temporaire4 {
+    background: no-repeat url(/Images/Expositions/au\ dela\ du\ reel.jpg) top / cover;
+}
+#temporaire5 {
+    background: no-repeat url(/Images/Expositions/digitalisation\ contemporary\ art.jpg) top / cover;
+}
+#temporaire6 {
+    background: no-repeat url(/Images/Expositions/innovating\ display.jpg) top / cover;
+}
+#temporaire7 {
+    background: no-repeat url(/Images/Expositions/bilal-mansuri-_GNr3yPUP3s-unsplash.jpg) top / cover;
+}
+#temporaire8 {
+    background: no-repeat url(/Images/Expositions/abysses.jpg) top / cover;
+}
+#temporaire9 {
+    background: no-repeat url(/Images/Expositions/greg-rakozy-oMpAz-DN-9I-unsplash.jpg) top / cover;
+}
+#temporaire10 {
+    background: no-repeat url(/Images/Expositions/immersive\ places.jpg) top / cover;
+}
+
+/*soirs electro*/
+
+.container-soirs {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    height: 80vh;
+    margin-bottom: 5%;
+}
+#soirselectro h3 {
+    background-color: #6633cc;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    margin-top: 3rem;
+    height: 8vh;
+    margin-bottom: 3rem;
+}
+#soir1 {
+    background: no-repeat url(/Images/Expositions/joshua-fuller-ta7rN3NcWyM-unsplash.jpg) center / cover;
+}
+#soir2 {
+    background: no-repeat url(/Images/Artistes/pexels-cottonbro-studio-4571213.jpg) center / cover;
+}
+#soir1 p, #soir2 p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 24px;
+    height: 8vh;
+}
+#soir1 .boutons, #soir2 .boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 75%;
+    padding: 10px;
+}
+
+
+/*media query smartphone*/
+@media screen and (max-width: 480px){
+.premier {
+        display: none;
+}
+.telechargement{
+    margin-top: 15px;
+}
+.mobile {
+    display: block;
+} 
+.mobile h2{
+   text-align: center;
+   margin: 10% 0;
+}
+.mobile h3 {
+    background-color: #ff3333;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    margin-top: 3rem;
+    height: 6vh;
+    margin-bottom: 2rem;
+}
+/*2ème encadré*/
+#en-cours {
+    display: inline;
+}
+/*expo temp soir electro*/
+#en-cours h3, #soir-electro h3, #expospermanentes h3 {
+    margin-bottom: 0;
+}
+#en-cours p, #soir-electro p {
+    height: 10vh;
+}
+#expo-en-cours, .decouvrir #soir-electro{
+    height: 50vh;
+}
+#expo-en-cours .boutons, #soir-electro .boutons, #permanentes1 .boutons, #permanentes2 .boutons, #permanentes3 .boutons {
+    height: 55%;
+}
+.container-expos, .container-electro {
+    height: auto;
+    margin: 0 0 1vh 0;
+}
+/*expos permanentes*/
+.container-permanentes {
+    display: inline;
+}
+#permanentes1, #permanentes2, #permanentes3{
+    height: 50vh;
+    margin: 0 0 3rem 0;
+}
+#permanentes1 p, #permanentes2 p, #permanentes3 p {
+    height: 15vh;
+}
+/*histoire*/
+#histoire {
+    display: none;
+}
+.histoire-mobile {
+    display: block;
+    margin-bottom: 5%;
+    background-color: rgba(255, 51, 51, 0.25);
+    padding: 1rem 1rem;
+}
+#histoire-mobile {
+    display: block;
+    width: 100%;
+}
+#histoire-mobile video {
+    max-width: 400px;
+}
+#histoire-mobile h2{
+    color: #ff3333;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    margin-top: 3rem;
+    height: 7vh;
+    margin-bottom: 2rem;
+}
+#artiste-mobile {
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+.artiste-mobile h4, .oeuvre-mobile h4{
+    background-color: #ff3333;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    margin-top: 3rem;
+    height: 7vh;
+    margin-bottom: 1rem;
+}
+#artiste-mobile p, #oeuvre-mobile p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 12px;
+    height: 5vh;
+}
+#artiste-mobile div, #oeuvre-mobile div {
+    width: 70vw;
+    height: 40vh;
+}
+#artiste1 {
+    background: no-repeat url(/Images/Artistes/malika-favre-©-.jpg) center / cover;
+}
+#artiste2 {
+    background: no-repeat url(/Images/Artistes/beeple.webp) center / cover;
+}
+#artiste3 {
+    background: no-repeat url(/Images/Artistes/paula_scher_1500x1500.jpg) center / cover;
+}
+#artiste4 {
+    background: no-repeat url(/Images/Artistes/markrisephoto.jpg) center / cover;
+}
+#artiste5 {
+    background: no-repeat url(/Images/Artistes/susannepaschke.jpg) center / cover;
+}
+#artiste6 {
+    background: no-repeat url(/Images/Artistes/woodkid-2020-photo-2-collier-schorr.jpg) top / cover;
+}
+#oeuvre-mobile {
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    height: auto;
+}
+#oeuvre1 {
+    background: no-repeat url(/Images/Oeuvres/politcs\ is\ bullshit\ beeple.jpg) top / cover;
+}
+#oeuvre2 {
+    background: no-repeat url(/Images/Oeuvres/malika\ favre.png) top / cover;
+}
+#oeuvre3 {
+    background: no-repeat url(/Images/Oeuvres/woldeu\ waideu.mp4) top / cover;
+}
+#oeuvre4 {
+    background: no-repeat url(/Images/Oeuvres/27cc.jpg) bottom left / cover;
+}
+
+#ensavoirplus {
+    margin: 2rem 25vw 2rem 0;
+} 
+/* expos temporaires */
+#expostemporaires-mobile {
+    color: #6633cc;
+    display: block;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    height: 7vh;
+    margin-bottom: 2rem;
+}
+#expostemporaires {
+    padding: 1rem 2rem;
+    margin-top: 4rem;
+}
+#expostemporaires h3, #expostemporaires h4 #soirselectro h3{
+    height: 7vh;
+}
+.container-temporaires1, .container-temporaires2, .container-temporaires3{
+    overflow-x: scroll;
+    height: 50vh;
+}
+#temporaire1, #temporaire2, #temporaire3, #temporaire4, #temporaire5, #temporaire6, #temporaire7, #temporaire8, #temporaire9, #temporaire10{
+    width: 80vw;
+}
+#temporaire1 p, #temporaire2 p, #temporaire3 p, #temporaire4 p, #temporaire5 p, #temporaire6 p, #temporaire7 p, #temporaire8 p, #temporaire9 p, #temporaire10 p {
+    padding: 10px;
+    height: 10vh;
+}
+/*soirs electro*/
+.container-soirs {
+    display: inline;
+    height: auto;
+}
+#soir1{
+    height: 50vh;
+    margin: 0 0 3rem 0;
+}
+#soir2 {
+    height: 50vh;
+    margin: 0 0 5% 0; 
+}
+#soir1 p, #soir2 p {
+    height: 6vh;
+}
+#soir1 .boutons, #soir2 .boutons {
+    height: 70%;
+}
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px){
+
+.mobile {
+    display: none;
+} 
+/*2ème encadré*/
+#en-cours {
+    display: inline;
+}
+/*expo temp soir electro*/
+#en-cours h3, #soir-electro h3, #expospermanentes h3 {
+    margin-bottom: 0;
+}
+#en-cours p, #soir-electro p {
+    height: 10vh;
+}
+#expo-en-cours, .decouvrir #soir-electro{
+    height: 50vh;
+}
+#expo-en-cours .boutons, #soir-electro .boutons, #permanentes1 .boutons, #permanentes2 .boutons, #permanentes3 .boutons {
+    height: 55%;
+}
+.container-expos, .container-electro {
+    height: auto;
+    margin: 0 0 1vh 0;
+}
+/*expos permanentes*/
+.container-permanentes {
+    display: inline;
+}
+#permanentes1, #permanentes2, #permanentes3{
+    height: 50vh;
+    margin: 0 0 3rem 0;
+}
+#permanentes1 p, #permanentes2 p, #permanentes3 p {
+    height: 15vh;
+}
+/*histoire*/
+#histoire {
+    display: none;
+}
+.histoire-mobile {
+    display: block;
+    margin-bottom: 5%;
+    background-color: rgba(255, 51, 51, 0.25);
+    padding: 1rem 1rem;
+}
+#histoire-mobile {
+    display: block;
+    width: 100%;
+}
+#histoire-mobile video {
+    max-width: 400px;
+}
+#histoire-mobile h2{
+    color: #ff3333;
+    text-align: center;
+    max-width: auto;
+    padding: 2rem 0 0 0;
+    margin-top: 3rem;
+    height: 7vh;
+    margin-bottom: 2rem;
+}
+#artiste-mobile {
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+.artiste-mobile h4, .oeuvre-mobile h4{
+    background-color: #ff3333;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    margin-top: 3rem;
+    height: 7vh;
+    margin-bottom: 1rem;
+}
+#artiste-mobile p, #oeuvre-mobile p {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 12px;
+    height: 5vh;
+}
+#artiste-mobile div, #oeuvre-mobile div {
+    width: 70vw;
+    height: 40vh;
+}
+#artiste1 {
+    background: no-repeat url(/Images/Artistes/malika-favre-©-.jpg) center / cover;
+}
+#artiste2 {
+    background: no-repeat url(/Images/Artistes/beeple.webp) center / cover;
+}
+#artiste3 {
+    background: no-repeat url(/Images/Artistes/paula_scher_1500x1500.jpg) center / cover;
+}
+#artiste4 {
+    background: no-repeat url(/Images/Artistes/markrisephoto.jpg) center / cover;
+}
+#artiste5 {
+    background: no-repeat url(/Images/Artistes/susannepaschke.jpg) center / cover;
+}
+#artiste6 {
+    background: no-repeat url(/Images/Artistes/woodkid-2020-photo-2-collier-schorr.jpg) top / cover;
+}
+#oeuvre-mobile {
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    height: auto;
+}
+#oeuvre1 {
+    background: no-repeat url(/Images/Oeuvres/politcs\ is\ bullshit\ beeple.jpg) top / cover;
+}
+#oeuvre2 {
+    background: no-repeat url(/Images/Oeuvres/malika\ favre.png) top / cover;
+}
+#oeuvre3 {
+    background: no-repeat url(/Images/Oeuvres/woldeu\ waideu.mp4) top / cover;
+}
+#oeuvre4 {
+    background: no-repeat url(/Images/Oeuvres/27cc.jpg) bottom left / cover;
+}
+
+#ensavoirplus {
+    margin: 2rem 25vw 2rem 0;
+} 
+/* expos temporaires */
+#expostemporaires-mobile {
+    color: #6633cc;
+    display: block;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    height: 7vh;
+    margin-bottom: 2rem;
+
+}
+#expostemporaires {
+    padding: 1rem 2rem;
+    margin-top: 4rem;
+}
+#expostemporaires h3, #expostemporaires h4 #soirselectro h3{
+    height: 7vh;
+}
+.container-temporaires1, .container-temporaires2, .container-temporaires3{
+    overflow-x: scroll;
+    height: 50vh;
+}
+#temporaire1, #temporaire2, #temporaire3, #temporaire4, #temporaire5, #temporaire6, #temporaire7, #temporaire8, #temporaire9, #temporaire10{
+    width: 80vw;
+}
+#temporaire1 p, #temporaire2 p, #temporaire3 p, #temporaire4 p, #temporaire5 p, #temporaire6 p, #temporaire7 p, #temporaire8 p, #temporaire9 p, #temporaire10 p {
+    padding: 10px;
+    height: 10vh;
+}
+/*soirs electro*/
+.container-soirs {
+    display: inline;
+    height: auto;
+}
+#soir1{
+    height: 50vh;
+    margin: 0 0 3rem 0;
+}
+#soir2 {
+    height: 50vh;
+    margin: 0 0 5% 0; 
+}
+#soir1 p, #soir2 p {
+    height: 6vh;
+}
+#soir1 .boutons, #soir2 .boutons {
+    height: 70%;
+}
+}

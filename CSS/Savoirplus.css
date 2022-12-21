@@ -1,0 +1,89 @@
+.premier{
+    margin-top: 25vh;
+}
+h2{
+  text-align: center;
+  margin-bottom: 10vh;
+}
+#artnum {
+    text-align: center;
+}
+
+/* container */
+h3{
+    background-color: #ff3333;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    margin: 3rem 0 4rem 0;
+    height: 8vh;
+}
+.containerartistes, .containeroeuvres{
+    margin-top: 5rem;
+    background-color: rgba(255, 51, 51, 0.4);
+    padding: 1rem;
+}
+#artistes, #oeuvres{
+    display: flex;
+    overflow-x: scroll;
+}
+.container{
+    position: relative;
+}
+.container img, .container video {
+    height: 50vh;
+    width: 30vw;
+    object-fit: cover;
+    object-position: left;
+}
+#woodkid, #malika, #paula {
+    object-position: top;
+}
+p{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 2rem 0 0 2rem;
+    height: 12vh;
+    width: 100%;
+    position: absolute;
+}
+.bouton-principal a:hover{
+    color: black;
+}
+.bouton-principal{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 480px){
+.premier{
+    display: none;
+}
+h2{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+#artnum video{
+    width: 100%;
+}
+#artistes, #oeuvres{
+    display: block;
+    overflow-x: none;
+}
+.container{
+    position: relative;
+}
+.container img, .container video {
+    width: 100%;
+    object-position: center;
+}
+#saramobile{
+    object-position: left;
+}
+h3, p{
+    height: 6vh;
+}
+.containeroeuvres{
+    margin-bottom: 15vh;
+}
+}
